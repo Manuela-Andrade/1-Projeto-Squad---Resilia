@@ -1,0 +1,107 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+.logo{
+    width: 100%;
+    height: 150px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/017/939/original/cosmic-galaxy-with-nebula-free-video.jpg);
+}
+
+ .logo img{
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 10px
+
+}
+
+header{
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    
+}
+@media (max-width: 500px){
+    
+}
+
+header nav{
+    float:right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+   height: 50px;
+   line-height: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: transparent; 
+    color: #4682B4; 
+    transition: 0.5s; 
+    border: solid 1px #4682B4; 
+    border-radius: 10px; 
+}
+
+.menu-toggle{
+    color:white;
+    float: right;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 990px){
+    header{
+        padding: 0 20px;
+        height: 50px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+       display: none; 
+       position: absolute;
+       width: 100%;
+       height: calc(100vh - 50px);
+       background: #333;
+       top: 200px;
+       left: -100%;
+       transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+        height: 90px;
+    }
+    .logo img{
+    width: 70px;
+    height: 70px;
+    }
+
+}
