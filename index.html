@@ -19,8 +19,10 @@
 
 <body>
 
-  <div class="logo">
-    <img src="assets/img/Pizzaria solari.png">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/img/seta.png"></button>
+
+  <div id="logo" class="logo">
+    <img src="./assets/img/pizzaSolari.png">
   </div>
   <header>
     <div class="topnav" id="myTopnav">
@@ -62,39 +64,83 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+
+
+    <div class="h1">
+      <h1>Algumas de nossas deliciosas pizzas</h1>
+    </div>
+    <div class="container">
+      <div class="item">
+        <h2>Calabresa </h2>
+        <img src="assets/img/calabresa.png">
+        <p>Molho de tomate, camada dupla de mussarela e orégano</p>
+        <h1>R$ 25</h1>
+        <a href="cardapio.html"><button>Cardápio</button></a>
+      </div>
+
+      <div class="item">
+        <h2>Mussarela</h2>
+        <img src="assets/img/mussarela.png">
+        <p>Molho de tomate, camada dupla de mussarela e orégano</p>
+        <h1>R$ 25</h1>
+        <a href="cardapio.html"><button>Cardápio</button></a>
+      </div>
+
+      <div class="item">
+        <h2>Portuguesa</h2>
+        <img src="assets/img/portuguesa.png">
+        <p>Molho de tomate, camada dupla de mussarela e orégano</p>
+        <h1>R$ 25</h1>
+        <a href="cardapio.html"><button>Cardápio</button></a>
+      </div>
+    </div>
   </main>
 
-  <div class="h1"><h1>Algumas de nossas deliciosas pizzas</h1></div>
-  <div class="container">
-    <div class="item">
-      <h2>Calabresa </h2>
-      <img src="assets/img/calabresa.png">
-      <p>Molho de tomate, camada dupla de mussarela e orégano</p>
-      <h1>R$ 25</h1>
-      <a href="cardapio.html"><button>Cardápio</button></a>
+  <footer>
+    <div class="col">
+    <div class="col1">
+      <h3>FALE CONOSCO</h3>
+      <p><img src="assets/img/whatsapp.png" width="30px" height="30px">(21) 90011-0022</p>
+      <p><img src="assets/img/facebook.png" width="30px" height="30px">https://www.facebook.com/pizzariasolari/</p>
+      <p><img src="assets/img/instagram.png" width="30px" height="30px">https://www.instagram.com/pizzariasolari/</p>
   </div>
+    <div class="col1">
+      <h3>NOSSA LOCALIZAÇÃO</h3>
+      <p>R. Júpiter, 52 - Jardim Paraíso</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1838.6878147338848!2d-43.594792409679584!3d-22.825588260239687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be27dd283bc03%3A0xde250bffb15f232c!2sR.%20J%C3%BApiter%2C%2052%20-%20Jardim%20Para%C3%ADso%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026297-216!5e0!3m2!1spt-BR!2sbr!4v1668870372177!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div> 
 
-  <div class="item">
-      <h2>Mussarela</h2>
-      <img src="assets/img/mussarela.png">
-      <p>Molho de tomate, camada dupla de mussarela e orégano</p>
-      <h1>R$ 25</h1>
-      <a href="cardapio.html"><button>Cardápio</button></a>
-  </div>
 
-  <div class="item">
-      <h2>Portuguesa</h2>
-      <img src="assets/img/portuguesa.png">
-      <p>Molho de tomate, camada dupla de mussarela e orégano</p>
-      <h1>R$ 25</h1>
-    <a href="cardapio.html"><button>Cardápio</button></a>
-  </div>
-
-  </div>
+    
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Script do botão que redireciona para o topo da pág -->
+  <script>
+
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function
+      scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    } 
+  </script>
 
   <!-- Script do Menu -->
   <script>
@@ -105,7 +151,7 @@
       } else {
         x.className = "topnav";
       }
-    } 
+    }  
   </script>
 
 </body>
