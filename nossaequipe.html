@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nossa Equipe</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/equipe.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/img/seta.png"></button>
+
+    <div id="logo" class="logo">
+        <img src="./assets/img/pizzaSolari.png">
+    </div>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="quemsomos.html">Quem Somos</a>
+            <a href="nossaequipe.html">Nossa Equipe</a>
+            <a href="contato.html">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="paragrafo">
+        <div class="equipe">
+            <h1> Conheça o nosso squad</h1>
+            <p>A equipe de desenvolvedores da Pizzaria Solari</p>
+        </div>
+    </div>
+    <div class="squad">
+        <div class="icons2">
+            <img src="assets/img/manu2.jpeg">
+            <h1> Manuela De Andrade</h1>
+            <h2>Colaboradora I</h2>
+        </div>
+        <div class="icons1">
+            <img src="assets/img/nicacio2.jpeg">
+            <h1> Pedro Nicacio</h1>
+            <h2>Colaborador II</h2>
+        </div>
+        <div class="icons3">
+            <img src="assets/img/eu.png">
+            <h1> Anderson Assum</h1>
+            <h2>Gestor de Gente e Engajamento</h2>
+        </div>
+        <div class="icons4">
+            <img src="assets/img/bea2.jpeg">
+            <h1> Beatriz De Melo</h1>
+            <h2>Gestora de Conhecimento</h2>
+        </div>
+        <div class="icons5">
+            <img src="assets/img/carol3.jpeg">
+            <h1>Caroline Almeida</h1>
+            <h2>Co-facilitadora</h2>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="col">
+            <div class="col1">
+                <h3>FALE CONOSCO</h3>
+                <p><img src="assets/img/whatsapp.png" width="30px" height="30px">(21) 90011-0022</p>
+                <p><img src="assets/img/facebook.png" width="30px"
+                        height="30px">https://www.facebook.com/pizzariasolari/
+                </p>
+                <p><img src="assets/img/instagram.png" width="30px"
+                        height="30px">https://www.instagram.com/pizzariasolari/
+                </p>
+            </div>
+            <div class="col1">
+                <h3>NOSSA LOCALIZAÇÃO</h3>
+                <p>R. Júpiter, 52 - Jardim Paraíso</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1838.6878147338848!2d-43.594792409679584!3d-22.825588260239687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be27dd283bc03%3A0xde250bffb15f232c!2sR.%20J%C3%BApiter%2C%2052%20-%20Jardim%20Para%C3%ADso%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026297-216!5e0!3m2!1spt-BR!2sbr!4v1668870372177!5m2!1spt-BR!2sbr"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script do botão que redireciona para o topo da pág -->
+    <script>
+
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function
+            scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        } 
+    </script>
+
+    <!-- Script do Menu -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
